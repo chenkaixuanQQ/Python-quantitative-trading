@@ -69,7 +69,7 @@ def func(a : str, b, y, c = 3, d = 4):
 
 if __name__ == "__main__":
     x = 60
-    f1 = Process(target = func, args = ("f1",3,10), kwargs = {"c" : 5, "d" : 6})
+    f1 = Process(target = func, args = ("f1",2,10), kwargs = {"c" : 5, "d" : 6})
     f2 = Process(target = func, name = "mm", args = ("f2",5,100), kwargs = {"c" : 7, "d" : 8})
     f3 = Process(target = func, name = "nn", args = ("f2",10,200), kwargs = {"c" : 9, "d" : 10},daemon = True)
     t0 = time.time()
